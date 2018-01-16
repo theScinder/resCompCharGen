@@ -1,0 +1,12 @@
+Reservoir computing is a framework for computation that may be viewed as an extension of neural networks.[1] Typically an input signal is fed into a fixed (random) dynamical system called a reservoir and the dynamics of the reservoir map the input to a higher dimension. Then a simple readout mechanism is trained to read the state of the reservoir and map it to the desired output. The main benefit is that training is performed only at the readout stage and the reservoir is fixed. Liquid-state machines[2] and echo state networks[3] are two major types of reservoir computing.
+
+The reservoir consists of a collection of recurrently connected units. The connectivity structure is usually random, and the units are usually non-linear. The overall dynamics of the reservoir are driven by the input, and also affected by the past. A rich collection of dynamical input-output mapping is a crucial advantage over time delay neural networks.
+
+The readout is carried out using a linear transformation of the reservoir output. This transformation is adapted to the task of interest by using a linear regression or a Ridge regression using a teaching signal.
+
+An early example of reservoir computing was the context reverberation network.[5] In this architecture, an input layer feeds into a high dimensional dynamical system which is read out by a trainable single-layer perceptron. Two kinds of dynamical system were described: a recurrent neural network with fixed random weights, and a continuous reaction-diffusion system inspired by Alan Turing’s model of morphogenesis. At the trainable layer, the perceptron associates current inputs with the signals that reverberate in the dynamical system; the latter were said to provide a dynamic "context" for the inputs. In the language of later work, the reaction-diffusion system served as the reservoir.
+
+The extension of the reservoir computing framework towards Deep Learning, with the introduction of deep reservoir computing and of the deep Echo State Network (deepESN) model[7][8] allows to develop efficiently trained models for hierarchical processing of temporal data, at the same time enabling the investigation on the inherent role of layered composition in recurrent neural networks.
+
+In late 2017, a research team from the University of Michigan implemented the reservoir computing principles in a chip and demonstrated its performance in a speech prediction task.[9][10]
+
