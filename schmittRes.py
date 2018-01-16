@@ -1,14 +1,20 @@
-#Reservoir computing 
+# Reservoir computing character prediction text generator
+# Perturb a dynamic reservoir with character inputs, predict next character with linear classifier 
 #              ________  
 #              |       |     
-#              V       |  
+#              V       |  random connections with some sparsity
 #input--->o--->o--->o  |
 #         |    |    |  | 
 #         V    V    V  |
 #         o--->o--->o--
 #         |    |    |
 #         V    V    V
-#         o--->o--->o--->output
+#         o--->o--->o--->output --> linear classifier
+#
+# This implementation is inspired in no small part by Andrej Karpathy's char-rnn gist and blog post: https://karpathy.github.io/2015/05/21/rnn-effectiveness/
+#
+#https://gist.github.com/karpathy/d4dee566867f8291f086 
+# BSD Licence
    
 import numpy as np
 import matplotlib.pyplot as plt
